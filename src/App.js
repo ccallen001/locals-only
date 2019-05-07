@@ -7,18 +7,19 @@ import AppHeader from './Components/AppHeader';
 import AppNav from './Components/AppNav';
 
 import Home from './Routes/Home';
-import Dashboard from './Routes/Dashboard';
-import About from './Routes/About';
+import Establishments from './Routes/Establishments';
+import Specials from './Routes/Specials';
 
 function App() {
     return (
         <div className="App">
             <AppHeader />
             <Router>
+                <div className="App-background"></div>
                 <AppNav />
                 <Route path="/" exact component={Home} />
-                <Route path="/dashboard/" component={Dashboard} />
-                <Route path="/about/" component={About} />
+                <Route path="/establishments/" component={Establishments} />
+                <Route path="/specials/" component={Specials} />
             </Router>
         </div>
     );
