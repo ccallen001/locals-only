@@ -15,11 +15,15 @@ function App() {
         <div className="App">
             <div className="App-background"></div>
             <Router>
+                <div className="App-background"></div>
                 <AppNav />
                 <Route path="/" exact component={Home} />
                 <Route path="/establishments/" component={Establishments} />
                 <Route path="/specials/" component={Specials} />
+<<<<<<< HEAD
                 <Route path="/admin/" component={Admin} />
+=======
+>>>>>>> 463339f053096eee3934477b4730c48bb5adc348
             </Router>
         </div>
     );

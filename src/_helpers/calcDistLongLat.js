@@ -5,10 +5,10 @@ function calcDistance(lat1, long1, lat2, long2, unit) {
     if ((lat1 === lat2) && (long1 === long2)) {
         return 0;
     } else {
-        lat1 = Number(lat1);
-        long1 = Number(long1);
-        lat2 = Number(lat2);
-        long2 = Number(long2);
+        lat1    = Number(lat1);
+        long1   = Number(long1);
+        lat2    = Number(lat2);
+        long2   = Number(long2);
 
         const radlat1 = Math.PI * lat1 / 180;
         const radlat2 = Math.PI * lat2 / 180;

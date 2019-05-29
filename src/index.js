@@ -34,6 +34,7 @@ firebase.initializeApp({
     messagingSenderId: "656137639438"
 });
 
+<<<<<<< HEAD
 // -----------------------------------------------------------------------------------------------------
 // globalStore initialization
 
@@ -58,6 +59,8 @@ if (!globalStore.establishments.length) {
 
 // -----------------------------------------------------------------------------------------------------
 
+=======
+>>>>>>> 463339f053096eee3934477b4730c48bb5adc348
 ReactDOM.render(<App />, document.getElementById('root'));
 
 serviceWorker.register();
