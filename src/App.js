@@ -1,24 +1,25 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import './Styles/App.scss';
-
-import AppHeader from './Components/AppHeader';
 import AppNav from './Components/AppNav';
 
 import Home from './Routes/Home';
-import Dashboard from './Routes/Dashboard';
-import About from './Routes/About';
+import Establishments from './Routes/Establishments';
+import Specials from './Routes/Specials';
+import Admin from './Routes/Admin';
+
+import './Styles/App.scss';
 
 function App() {
     return (
         <div className="App">
-            <AppHeader />
+            <div className="App-background"></div>
             <Router>
                 <AppNav />
                 <Route path="/" exact component={Home} />
-                <Route path="/dashboard/" component={Dashboard} />
-                <Route path="/about/" component={About} />
+                <Route path="/establishments/" component={Establishments} />
+                <Route path="/specials/" component={Specials} />
+                <Route path="/admin/" component={Admin} />
             </Router>
         </div>
     );

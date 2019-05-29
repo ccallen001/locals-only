@@ -1,8 +1,9 @@
 {
-  "name": "locals-only",
+  "name": "where-we-drinkin",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "firebase": "^5.11.0",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

@@ -1,11 +1,42 @@
+// App-wide styles, but not global html and body and element styles... see global.scss for those
+@import "./variables.scss";
+
 .App {
-    padding-top: 32px;
+  padding: 32px 16px;
+  height: 100%;
+  box-shadow: inset 0 -8px 64px $appBlack;
+
+  .App-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: url("../Assets/Images/background1.jpg") no-repeat center / cover;
+    border-radius: 8px;
+    opacity: 0.66;
+    transform: scale(0.95);
+  }
 }
 
-.component {}
+.component {
+}
 
 .route {
-    h2 {
-        margin-bottom: 32px;
+  h2 {
+    margin-bottom: 16px;
+    font-size: 32px;
+  }
+
+  .admin-link {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    font-size: 12px;
+
+    &::after {
+      content: "[ A ]";
     }
+  }
 }
