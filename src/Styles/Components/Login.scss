@@ -1,0 +1,29 @@
+@import "../variables.scss";
+
+.component.Login {
+  .login-form {
+    margin: auto;
+    padding: 8px;
+    width: 50%;
+    min-width: 316px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+
+    .login-form-title {
+      color: $appBlack;
+    }
+
+    .input-container {
+      color: $appBlack;
+
+      label {
+        display: inline-block;
+        text-align: left;
+
+        span.label-text {
+          display: block;
+        }
+      }
+    }
+  }
+}

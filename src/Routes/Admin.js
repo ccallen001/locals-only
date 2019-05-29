@@ -1,9 +1,11 @@
 import React from 'react';
+import Login from '../Components/Login';
 
 function Admin() {
     return (
-        <div>
+        <div className="route Admin">
             <h2>Admin</h2>
+            <Login />
         </div>
     );
 }
